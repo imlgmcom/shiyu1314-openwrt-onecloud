@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWrt Lite</title>
+    <meta name="description" content="OpenWrt 是针对中国大陆用户优化的增强型固件变体，其内核为6.11.11，并基于原生OpenWrt提供高效稳定的体验。">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #0066CC, #6495ed);
+            color: white;
+            text-align: center;
+            padding: 2.5em 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+        .button-container {
+            display: inline-block;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .download-button {
+            background-color: #6495ed;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+            display: inline-block;
+            text-align: center;
+        }
+        .download-button:hover {
+            background-color: #0066CC;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OpenWrt 固件</h1>
+        <p>增强型固件，内核 6.11.11</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>OpenWrt 23.05</h2>
+            <p>针对中国大陆用户的增强型OpenWrt变体。</p>
+            <p>基于原生OpenWrt优化固件，提供高效、稳定的使用体验。</p>
+        </section>
+
+        <section>
+            <h2>目标设备</h2>
+            <ul>
+                <li>玩客云</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>下载</h2>
+            <p>OpenWrt 仅预装了 Mihomo、Docker、Argon、TTYD、SMB、AdguardHome、Aria2。</p>
+            <div class="button-container">
+                <a class="download-button" href="https://github.com/shiyu1314/openwrt-onecloud/releases" target="_blank">v23.05.5</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> <a href="https://github.com/shiyu1314/openwrt-onecloud" target="_blank">OpenWrt by shiyu1314</a></a></p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
