@@ -20,7 +20,7 @@ on:
       OP_IP:
         description: '静态IP地址'     
         required: false
-        default: '192.168.2.2' 
+        default: '192.168.1.123' 
         type: string
 
       OP_rootfs:
@@ -38,7 +38,7 @@ on:
       CUSTOM_PLUGINS:
         description: '自定义插件名称，用空格分隔'
         required: false
-        default: 'luci-app-dockerman luci-theme-argon luci-app-argon-config luci-app-ttyd luci-app-diskman luci-app-hd-idle luci-app-mihomo luci-app-samba4 luci-app-emby luci-app-aria2 luci-app-alist luci-app-adguardhome'
+        default: 'luci-app-dockerman luci-theme-argon luci-app-argon-config luci-app-ttyd luci-app-diskman luci-app-hd-idle luci-app-mihomo luci-app-emby luci-app-aria2 luci-app-alist luci-app-adguardhome luci-app-wolplus luci-app-unishare luci-app-cifs-mount'
         type: string
 
 env:
